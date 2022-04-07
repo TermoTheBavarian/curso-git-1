@@ -8,7 +8,7 @@ const getUser = async (id) => {
 }
 
 const getPosts = async (user) => {
-  const res = await fetch(`${url}/posts?userId=${user.id}&_limit=25`)
+  const res = await fetch(`${url}/posts?userId=${user.id}&_limit=23`)
   const posts = await res.json();
 
   return posts;
